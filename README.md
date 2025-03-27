@@ -1,10 +1,10 @@
-# Geo-Benthos
+# Geo-Bento
 
-[Benthos](benthos.dev/) plugins to transform geographic coordinates from a stream.
+[Bento](https://warpstreamlabs.github.io/bento) plugins to transform geographic coordinates from a stream.
 
-Benthos is the swiss army of stream processing: Benthos solves common data engineering tasks such as transformations, integrations, and multiplexing with declarative and unit testable configuration. 
+Bento is the swiss army of stream processing: Bento solves common data engineering tasks such as transformations, integrations, and multiplexing with declarative and unit testable configuration.
 
-This repo contains multiple Benthos plugins as Go modules, that you can build on demand (see `cmd/geo-benthos`).
+This repo contains multiple Bento plugins as Go modules, that you can build on demand (see `cmd/geo-bento`).
 
 Note that the h3 plugin is using a [CGO free version](https://github.com/akhenakh/goh3).
 
@@ -44,8 +44,8 @@ output:
 Enrich the input with the timezone:
 
 ```sh
-go build -o geo-benthos ./cmd/geo-benthos
-./geo-benthos -c testdata/country.yaml
+go build -o geo-0bento ./cmd/geo-bento
+./geo-bento -c testdata/country.yaml
 {"country":["France"],"id":42,"lat":48.86,"lng":2.34}
 ```
 
@@ -86,14 +86,14 @@ output:
 Enrich the input with the h3 cell:
 
 ```sh
-go build -o geo-benthos ./cmd/geo-benthos
-./geo-benthos -c testdata/h3.yaml
+go build -o geo-bento ./cmd/geo-bento
+./geo-bento -c testdata/h3.yaml
 {"h3":"851fb467fffffff","id":42,"lat":48.86,"lng":2.34}
 ```
 
 ## Transform latitude and longitude into a Google s2 cell
 
-Use `s2` with the following parameters: `latitude`, `longitude`, `resolution`.
+Use `geos2` with the following parameters: `latitude`, `longitude`, `resolution`.
 
 An example `position.json`:
 
@@ -126,8 +126,8 @@ output:
 Enrich the input with the s2 cell:
 
 ```sh
-go build -o geo-benthos ./cmd/geo-benthos
-./geo-benthos -c testdata/s2.yaml
+go build -o geo-bento ./cmd/geo-bento
+./geo-bento -c testdata/s2.yaml
 {"id":42,"lat":48.86,"lng":2.34,"s2":"2/033303031301002"}
 ```
 
@@ -166,8 +166,8 @@ output:
 Enrich the input with the timezone:
 
 ```sh
-go build -o geo-benthos ./cmd/geo-benthos
-./geo-benthos -c testdata/tz.yaml
+go build -o geo-bento ./cmd/geo-bento
+./geo-bento -c testdata/tz.yaml
 {"tz":"Europe/Paris","id":42,"lat":48.86,"lng":2.34}
 ```
 
@@ -196,7 +196,7 @@ output:
 Run this command and point your browser to http://localhost:4195/
 
 ```sh
-./geo-benthos blobl server --no-open --host 0.0.0.0 --input-file ./testdata/position.json -m testdata/s2_mapping.txt   
+./geo-bento blobl server --no-open --host 0.0.0.0 --input-file ./testdata/position.json -m testdata/s2_mapping.txt
 ```
 
 

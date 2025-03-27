@@ -4,9 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"math/rand"
-	"time"
 
-	"github.com/benthosdev/benthos/v4/public/service"
+	"github.com/warpstreamlabs/bento/public/service"
 )
 
 var randPosConfigSpec = service.NewConfigSpec().
@@ -43,8 +42,6 @@ func newRandPosInput(conf *service.ParsedConfig) (service.Input, error) {
 }
 
 func init() {
-	rand.Seed(time.Now().Unix())
-
 	err := service.RegisterInput(
 		"randpos", randPosConfigSpec,
 		func(conf *service.ParsedConfig, mgr *service.Resources) (service.Input, error) {

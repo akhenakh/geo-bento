@@ -2,7 +2,7 @@ package country
 
 import (
 	"github.com/akhenakh/coord2country"
-	"github.com/benthosdev/benthos/v4/public/bloblang"
+	"github.com/warpstreamlabs/bento/public/bloblang"
 )
 
 func init() {

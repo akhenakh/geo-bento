@@ -1,8 +1,8 @@
 package s2
 
 import (
-	"github.com/benthosdev/benthos/v4/public/bloblang"
 	"github.com/golang/geo/s2"
+	"github.com/warpstreamlabs/bento/public/bloblang"
 )
 
 func init() {
@@ -12,7 +12,7 @@ func init() {
 		Param(bloblang.NewInt64Param("resolution"))
 
 	err := bloblang.RegisterFunctionV2(
-		"s2", s2Spec, func(args *bloblang.ParsedParams) (bloblang.Function, error) {
+		"geos2", s2Spec, func(args *bloblang.ParsedParams) (bloblang.Function, error) {
 			lat, err := args.GetFloat64("lat")
 			if err != nil {
 				return nil, err

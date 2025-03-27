@@ -1,8 +1,8 @@
 package tz
 
 import (
-	"github.com/benthosdev/benthos/v4/public/bloblang"
 	"github.com/ringsaturn/tzf"
+	"github.com/warpstreamlabs/bento/public/bloblang"
 )
 
 func init() {
