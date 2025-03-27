@@ -4,7 +4,7 @@ go 1.24.1
 
 require (
 	github.com/akhenakh/coord2country v0.0.0-20240107175106-ab2a99ed2226
-	github.com/akhenakh/goh3 v0.0.0-20250327170852-97a16b337fc7
+	github.com/akhenakh/goh3 v0.0.0-20250327184419-a2525e5c839b
 	github.com/golang/geo v0.0.0-20250324010448-bc23e40121c4
 	github.com/ringsaturn/tzf v1.0.0
 	github.com/warpstreamlabs/bento v1.5.2
