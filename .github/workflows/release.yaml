@@ -1,0 +1,27 @@
+name: Publish Release YAML
+
+on:
+  push:
+    tags:
+      - "*"
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  korelease:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Go
+        uses: actions/setup-go@v5
+
+      - uses: ko-build/setup-ko@v0.8
+
+      - name: ko build
+        run: ko build --bare --platform=linux/amd64,linux/arm64 ./cmd/geo-bento 
+
