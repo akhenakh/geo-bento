@@ -199,6 +199,13 @@ Run this command and point your browser to http://localhost:4195/
 ./geo-bento blobl server --no-open --host 0.0.0.0 --input-file ./testdata/position.json -m testdata/s2_mapping.txt
 ```
 
+## Docker
+
+A pre built binary is also availale as a docker image:
+
+```sh
+ docker pull ghcr.io/akhenakh/geo-bento:latest
+```
 
 ## TODO
 
