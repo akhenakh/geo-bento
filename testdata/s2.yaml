@@ -9,7 +9,7 @@ pipeline:
   - mapping: |
       #!blobl
       root = this
-      root.s2 = s2(this.lat, this.lng, 15)
+      root.s2 = geos2(this.lat, this.lng, 15)
 
 output:
   label: "out"

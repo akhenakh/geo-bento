@@ -2,7 +2,7 @@ package h3
 
 import (
 	h3 "github.com/akhenakh/goh3"
-	"github.com/benthosdev/benthos/v4/public/bloblang"
+	"github.com/warpstreamlabs/bento/public/bloblang"
 	"modernc.org/libc"
 )
 
