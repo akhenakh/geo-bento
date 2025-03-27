@@ -782,8 +782,6 @@ github.com/ajstarks/svgo v0.0.0-20180226025133-644b8db467af/go.mod h1:K08gAheRH3
 github.com/ajstarks/svgo v0.0.0-20211024235047-1546f124cd8b/go.mod h1:1KcenG0jGWcpt8ov532z81sp/kMMUG485J2InIOyADM=
 github.com/akhenakh/coord2country v0.0.0-20240107175106-ab2a99ed2226 h1:AZFiejzyckgUdjDVJWgbqtajZVDiqyq6qlcYPkNrMBM=
 github.com/akhenakh/coord2country v0.0.0-20240107175106-ab2a99ed2226/go.mod h1:biad8ZK6GwEazE4EGxwzD+tbsTK9FK+4XgDkL36IAHc=
-github.com/akhenakh/goh3 v0.0.0-20250327151647-f148889f5435 h1:eSKJXf8xxqvtL5Hen2kgh8gffnCQPhuEuUIDIebK5mo=
-github.com/akhenakh/goh3 v0.0.0-20250327151647-f148889f5435/go.mod h1:E68pp6jFI4wzgK6hayd/6fh5fFQ7CAQltxRf2q9+ugA=
 github.com/akhenakh/goh3 v0.0.0-20250327170852-97a16b337fc7 h1:tMfRJooI1KYA++iJNoWNoD/RK8svxZs4a4fgH/WyefI=
 github.com/akhenakh/goh3 v0.0.0-20250327170852-97a16b337fc7/go.mod h1:E68pp6jFI4wzgK6hayd/6fh5fFQ7CAQltxRf2q9+ugA=
 github.com/akhenakh/goh3 v0.0.0-20250327184419-a2525e5c839b h1:nuNZcdTlAVFLTr/xWe82xAL87NzmFqaa5Q+8VVcYmaQ=
@@ -1241,8 +1239,8 @@ github.com/golang/geo v0.0.0-20250324010448-bc23e40121c4/go.mod h1:J+F9/3Ofc8ysE
 github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b/go.mod h1:SBH7ygxi8pfUlaOkMMuAQtPIUF8ecWP5IEl/CR7VP2Q=
 github.com/golang/glog v1.0.0/go.mod h1:EWib/APOK0SL3dFbYqvxE3UYd8E6s1ouQ7iEp/0LWV4=
 github.com/golang/glog v1.1.0/go.mod h1:pfYeQZ3JWZoXTV5sFc986z3HTpwQs9At6P4ImfuP3NQ=
-github.com/golang/glog v1.2.3 h1:oDTdz9f5VGVVNGu/Q7UXKWYsD0873HXLHdJUNBsSEKM=
-github.com/golang/glog v1.2.3/go.mod h1:6AhwSGph0fcJtXVM/PEHPqZlFeoLxhs7/t5UDAwmO+w=
+github.com/golang/glog v1.2.4 h1:CNNw5U8lSiiBk7druxtSHHTsRWcxKoac6kZKm2peBBc=
+github.com/golang/glog v1.2.4/go.mod h1:6AhwSGph0fcJtXVM/PEHPqZlFeoLxhs7/t5UDAwmO+w=
 github.com/golang/groupcache v0.0.0-20190702054246-869f871628b6/go.mod h1:cIg4eruTrX1D+g88fzRXU5OdNfaM+9IcxsU14FzY7Hc=
 github.com/golang/groupcache v0.0.0-20191227052852-215e87163ea7/go.mod h1:cIg4eruTrX1D+g88fzRXU5OdNfaM+9IcxsU14FzY7Hc=
 github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e/go.mod h1:cIg4eruTrX1D+g88fzRXU5OdNfaM+9IcxsU14FzY7Hc=
