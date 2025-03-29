@@ -115,7 +115,7 @@ pipeline:
   - mapping: |
       #!blobl
       root = this
-      root.s2 = s2_object(this.lat, this.lng, 15)
+      root.s2 = geos2(this.lat, this.lng, 15)
 
 output:
   label: "out"
@@ -185,6 +185,32 @@ input:
     min_lng: 2.0
     max_lng: 2.3
 
+output:
+  label: "out"
+  stdout:
+    codec: lines
+```
+## Example
+
+Use the random position generator, to use all plugins.
+```yaml
+input:
+  randpos:
+    min_lat: 46.0
+    max_lat: 48.0
+    min_lng: 2.0
+    max_lng: 2.3
+pipeline:
+  threads: 1
+  processors:
+  - mapping: |
+      #!blobl
+      root = this
+      root.h3 = h3(this.lat, this.lng, 12)
+      root.country = country(this.lat, this.lng)
+      root.s2 = geos2(this.lat, this.lng, 15)
+      root.tz = tz(this.lat, this.lng)
+      
 output:
   label: "out"
   stdout:
