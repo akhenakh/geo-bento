@@ -782,10 +782,6 @@ github.com/ajstarks/svgo v0.0.0-20180226025133-644b8db467af/go.mod h1:K08gAheRH3
 github.com/ajstarks/svgo v0.0.0-20211024235047-1546f124cd8b/go.mod h1:1KcenG0jGWcpt8ov532z81sp/kMMUG485J2InIOyADM=
 github.com/akhenakh/coord2country v0.0.0-20240107175106-ab2a99ed2226 h1:AZFiejzyckgUdjDVJWgbqtajZVDiqyq6qlcYPkNrMBM=
 github.com/akhenakh/coord2country v0.0.0-20240107175106-ab2a99ed2226/go.mod h1:biad8ZK6GwEazE4EGxwzD+tbsTK9FK+4XgDkL36IAHc=
-github.com/akhenakh/goh3 v0.0.0-20250327151647-f148889f5435 h1:eSKJXf8xxqvtL5Hen2kgh8gffnCQPhuEuUIDIebK5mo=
-github.com/akhenakh/goh3 v0.0.0-20250327151647-f148889f5435/go.mod h1:E68pp6jFI4wzgK6hayd/6fh5fFQ7CAQltxRf2q9+ugA=
-github.com/akhenakh/goh3 v0.0.0-20250327170852-97a16b337fc7 h1:tMfRJooI1KYA++iJNoWNoD/RK8svxZs4a4fgH/WyefI=
-github.com/akhenakh/goh3 v0.0.0-20250327170852-97a16b337fc7/go.mod h1:E68pp6jFI4wzgK6hayd/6fh5fFQ7CAQltxRf2q9+ugA=
 github.com/akhenakh/goh3 v0.0.0-20250327184419-a2525e5c839b h1:nuNZcdTlAVFLTr/xWe82xAL87NzmFqaa5Q+8VVcYmaQ=
 github.com/akhenakh/goh3 v0.0.0-20250327184419-a2525e5c839b/go.mod h1:E68pp6jFI4wzgK6hayd/6fh5fFQ7CAQltxRf2q9+ugA=
 github.com/andybalholm/brotli v1.0.4/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
@@ -1080,8 +1076,8 @@ github.com/dop251/goja_nodejs v0.0.0-20240728170619-29b559befffc/go.mod h1:VULpt
 github.com/dustin/go-humanize v1.0.0/go.mod h1:HtrtbFcZ19U5GC7JDqmcUSB87Iq5E25KnS6fMYU6eOk=
 github.com/dustin/go-humanize v1.0.1 h1:GzkhY7T5VNhEkwH0PVJgjz+fX1rhBrR7pRT3mDkpeCY=
 github.com/dustin/go-humanize v1.0.1/go.mod h1:Mu1zIs6XwVuF/gI1OepvI0qD18qycQx+mFykh5fBlto=
-github.com/dvsekhvalnov/jose2go v1.6.0 h1:Y9gnSnP4qEI0+/uQkHvFXeD2PLPJeXEL+ySMEA2EjTY=
-github.com/dvsekhvalnov/jose2go v1.6.0/go.mod h1:QsHjhyTlD/lAVqn/NSbVZmSCGeDehTB/mPZadG+mhXU=
+github.com/dvsekhvalnov/jose2go v1.7.0 h1:bnQc8+GMnidJZA8zc6lLEAb4xNrIqHwO+9TzqvtQZPo=
+github.com/dvsekhvalnov/jose2go v1.7.0/go.mod h1:QsHjhyTlD/lAVqn/NSbVZmSCGeDehTB/mPZadG+mhXU=
 github.com/dvyukov/go-fuzz v0.0.0-20200318091601-be3528f3a813/go.mod h1:11Gm+ccJnvAhCNLlf5+cS9KjtbaD5I5zaZpFMsTHWTw=
 github.com/eapache/go-resiliency v1.5.0 h1:dRsaR00whmQD+SgVKlq/vCRFNgtEb5yppyeVos3Yce0=
 github.com/eapache/go-resiliency v1.5.0/go.mod h1:5yPzW0MIvSe0JDsv0v+DvcjEv2FyD6iZYSs1ZI+iQho=
