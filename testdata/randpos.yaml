@@ -5,6 +5,18 @@ input:
     min_lng: 2.0
     max_lng: 2.3
 
+pipeline:
+  threads: 1
+  processors:
+  - mapping: |
+      #!blobl
+      root = this
+      root.h3 = h3(this.lat, this.lng, 12)
+      root.country = country(this.lat, this.lng)
+      root.s2 = s2(this.lat, this.lng, 15)
+      root.tz = tz(this.lat, this.lng)
+      
+
 output:
   label: "out"
   stdout:

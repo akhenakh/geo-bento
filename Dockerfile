@@ -1,4 +1,4 @@
-FROM golang:1.24 AS build
+FROM golang:1.26 AS build
 
 RUN useradd -u 10001 bento
 

@@ -12,7 +12,7 @@ func init() {
 		Param(bloblang.NewInt64Param("resolution"))
 
 	err := bloblang.RegisterFunctionV2(
-		"geos2", s2Spec, func(args *bloblang.ParsedParams) (bloblang.Function, error) {
+		"s2", s2Spec, func(args *bloblang.ParsedParams) (bloblang.Function, error) {
 			lat, err := args.GetFloat64("lat")
 			if err != nil {
 				return nil, err

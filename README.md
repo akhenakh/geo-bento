@@ -93,7 +93,7 @@ go build -o geo-bento ./cmd/geo-bento
 
 ## Transform latitude and longitude into a Google s2 cell
 
-Use `geos2` with the following parameters: `latitude`, `longitude`, `resolution`.
+Use `s2` with the following parameters: `latitude`, `longitude`, `resolution`.
 
 An example `position.json`:
 
@@ -115,7 +115,7 @@ pipeline:
   - mapping: |
       #!blobl
       root = this
-      root.s2 = geos2(this.lat, this.lng, 15)
+      root.s2 = s2(this.lat, this.lng, 15)
 
 output:
   label: "out"
@@ -222,7 +222,7 @@ output:
 Run this command and point your browser to http://localhost:4195/
 
 ```sh
-./geo-bento blobl server --no-open --host 0.0.0.0 --input-file ./testdata/position.json -m testdata/s2_mapping.txt
+./cmd/geo-bento blobl server --no-open --host 0.0.0.0 --input-file ./testdata/position.json -m testdata/all.yaml
 ```
 
 ## Docker
