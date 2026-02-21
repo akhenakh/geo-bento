@@ -208,7 +208,7 @@ pipeline:
       root = this
       root.h3 = h3(this.lat, this.lng, 12)
       root.country = country(this.lat, this.lng)
-      root.s2 = geos2(this.lat, this.lng, 15)
+      root.s2 = s2(this.lat, this.lng, 15)
       root.tz = tz(this.lat, this.lng)
       
 output:
