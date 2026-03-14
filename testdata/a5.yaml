@@ -1,0 +1,17 @@
+input:
+  file:
+    paths: ["testdata/position.json"]
+    codec: all-bytes
+
+pipeline:
+  threads: 1
+  processors:
+  - mapping: |
+      #!blobl
+      root = this
+      root.a5 = a5(this.lat, this.lng, 5)
+
+output:
+  label: "out"
+  stdout:
+    codec: lines

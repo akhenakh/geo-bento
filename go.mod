@@ -1,11 +1,12 @@
 module github.com/akhenakh/geo-bento
 
-go 1.25
+go 1.26.1
 
 require (
-	github.com/akhenakh/coord2country v0.0.0-20250522201829-3b5515016e3f
+	github.com/akhenakh/a5-go v0.0.0-20260314141947-776cda89b91c
+	github.com/akhenakh/coord2country v0.0.0-20260314151757-da75e63be731
 	github.com/akhenakh/goh3 v0.0.0-20250327184419-a2525e5c839b
-	github.com/golang/geo v0.0.0-20260129164528-943061e2742c
+	github.com/golang/geo v0.0.0-20260302211937-87f5a40ea07a
 	github.com/ringsaturn/tzf v1.0.3
 	github.com/warpstreamlabs/bento v1.15.0
 	modernc.org/libc v1.61.13
@@ -303,7 +304,7 @@ require (
 	github.com/parquet-go/parquet-go v0.25.1 // indirect
 	github.com/paulmach/orb v0.12.0 // indirect
 	github.com/pebbe/zmq4 v1.2.11 // indirect
-	github.com/peterstace/simplefeatures v0.53.0 // indirect
+	github.com/peterstace/simplefeatures v0.58.0 // indirect
 	github.com/pierrec/lz4/v4 v4.1.22 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/pkg/errors v0.9.1 // indirect

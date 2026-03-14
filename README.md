@@ -91,6 +91,48 @@ go build -o geo-bento ./cmd/geo-bento
 {"h3":"851fb467fffffff","id":42,"lat":48.86,"lng":2.34}
 ```
 
+## Transform latitude and longitude into an A5 cell
+
+Use `a5` with the following parameters: `latitude`, `longitude`, `resolution`.
+
+An example `position.json`:
+
+```js
+{"id":42, "lat": 48.86, "lng": 2.34}
+```
+
+A `a5.yaml` pipeline.
+
+```yaml
+input:
+  file:
+    paths: ["testdata/position.json"]
+    codec: all-bytes
+
+pipeline:
+  threads: 1
+  processors:
+  - mapping: |
+      #!blobl
+      root = this
+      root.a5 = a5(this.lat, this.lng, 5)
+
+output:
+  label: "out"
+  stdout:
+    codec: lines
+```
+
+Enrich the input with the a5 cell:
+
+```sh
+go build -o geo-bento ./cmd/geo-bento
+./geo-bento -c testdata/a5.yaml
+{"a5":"63c2000000000000", "id":42,"lat":48.86,"lng":2.34}
+```
+
+a5 module is using [a5-go](https://github.com/akhenakh/a5-go).
+
 ## Transform latitude and longitude into a Google s2 cell
 
 Use `s2` with the following parameters: `latitude`, `longitude`, `resolution`.
@@ -237,8 +279,9 @@ A pre built binary is also availale as a docker image:
 
 - [ ] s2 shape index to perform PIP
 - [ ] spatialite lookup to perform PIP
-- [ ] random points in a rect
+- [X] random points in a rect
 - [X] lat lng to h3
 - [X] lat lng to s2
+- [X] lat lng to a5
 - [X] lat lng to tz
 - [X] lat lng to country
