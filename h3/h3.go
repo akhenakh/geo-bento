@@ -5,8 +5,6 @@ import (
 	"github.com/warpstreamlabs/bento/public/bloblang"
 )
 
-var batch = h3.NewBatch()
-
 func init() {
 	h3Spec := bloblang.NewPluginSpec().
 		Param(bloblang.NewFloat64Param("lat")).
@@ -32,7 +30,7 @@ func init() {
 
 			return func() (interface{}, error) {
 				latLng := h3.NewLatLng(lat, lng)
-				c := batch.LatLngToCell(latLng, int(resolution))
+				c := h3.LatLngToCell(latLng, int(resolution))
 				return c.String(), nil
 			}, nil
 		})
