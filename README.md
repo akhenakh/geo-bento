@@ -264,7 +264,7 @@ output:
 Run this command and point your browser to http://localhost:4195/
 
 ```sh
-./cmd/geo-bento blobl server --no-open --host 0.0.0.0 --input-file ./testdata/position.json -m testdata/all.yaml
+./cmd/geo-bento/geo-bento blobl server --no-open --host 0.0.0.0 --input-file ./testdata/position.json -m testdata/all.yaml
 ```
 
 ## Docker
@@ -276,7 +276,7 @@ A pre built binary is also availale as a docker image:
 ```
 
 ## TODO
-
+- [ ] cover a geometry, s2, a5, h3
 - [ ] s2 shape index to perform PIP
 - [ ] spatialite lookup to perform PIP
 - [X] random points in a rect
